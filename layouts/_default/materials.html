@@ -7,7 +7,7 @@
     <div class="row-span-5"></div>
     <div class="row-span-5 col-start-5 row-start-1"></div>
     <div class="hidden sm:block col-start-2 row-start-1  py-4">
-        <img class="w-[210px] object-contain hover:object-scale-down aspect-ratio:auto" src="/src/logo_1.webp" />
+         <a href="/" ><img class="w-[210px] object-contain hover:object-scale-down aspect-ratio:auto" src="/src/logo_1.webp" /></a>
     </div>
     <div class="hidden sm:block col-start-3 row-start-1 text-center justify bg-center py-7 mt-4">
 <p class="text-xl   md:text-3xl 2xl:text-5xl text-[#00437a] font-extrabold  py-3 tracking-wide whitespace-nowrap ">САЛЬНИКИ VITOCOM<span style="color : red ; font-weight :200; ">&reg;</span> </p>
@@ -19,12 +19,12 @@
      <nav class="px-4 border-b md:shadow-lg ">
         <ul class="text-sm 2xl:text-base text-white md:px-2 ml-auto md:flex whitespace-nowrap  md:space-x-3 absolute md:relative top-full left-0 right-0 ">
             <li class="">
-                <a href="#" class=" md:inline-flex py-4 px-2 2xl:px-4 items-center hover:bg-[#00437a]">
+                <a href="/" class=" md:inline-flex py-4 px-2 2xl:px-4 items-center hover:bg-[#00437a]">
                     <span>О КОМПАНИИ</span>
                 </a>
             </li>
             <li class="" >
-                <a href="assortiment.xlsx" class=" md:inline-flex py-4 px-2 2xl:px-4 items-center hover:bg-[#00437a]">
+                <a href="/assortiment.xlsx" class=" md:inline-flex py-4 px-2 2xl:px-4 items-center hover:bg-[#00437a]">
                     <span>АССОРТИМЕНТ</span>
                 </a>
             </li>
@@ -34,27 +34,27 @@
                 </a>
             </li>
  <li >
-                <a href="#" class=" md:inline-flex py-4 px-2 2xl:px-4 items-center hover:bg-[#00437a]">
+                <a href="/salniki" class=" md:inline-flex py-4 px-2 2xl:px-4 items-center hover:bg-[#00437a]">
                     <span>САЛЬНИКИ-КОНСТРУКЦИИ</span>
                 </a>
             </li>
               <li >
-                <a href="#" class=" md:inline-flex py-4 px-2 2xl:px-4 items-center hover:bg-[#00437a]">
+                <a href="/kolza" class=" md:inline-flex py-4 px-2 2xl:px-4 items-center hover:bg-[#00437a]">
                     <span>КОЛЬЦА УПЛОТНИТЕЛЬНЫЕ</span>
                 </a>
             </li>
               <li >
-                <a href="#" class=" md:inline-flex py-4 px-2 2xl:px-4 items-center hover:bg-[#00437a]">
+                <a href="/markirovka" class=" md:inline-flex py-4 px-2 2xl:px-4 items-center hover:bg-[#00437a]">
                     <span>МАРКИРОВКА</span>
                 </a>
             </li>
                <li >
-                <a href="#" class=" md:inline-flex py-4 px-2 2xl:px-4 items-center hover:bg-[#00437a]">
+                <a href="/otzivi" class=" md:inline-flex py-4 px-2 2xl:px-4 items-center hover:bg-[#00437a]">
                     <span>ОТЗЫВЫ</span>
                 </a>
             </li>
                <li >
-                <a href="#" class=" md:inline-flex py-4 px-2 2xl:px-4 items-center hover:bg-[#00437a]">
+                <a href="/registrazia" class=" md:inline-flex py-4 px-2 2xl:px-4 items-center hover:bg-[#00437a]">
                     <span>РЕГИСТРАЦИЯ</span>
                 </a>
             </li>
@@ -66,7 +66,138 @@
 
     <h1 class="py-6 text-3xl font-Montserrat font-bold text-[#003567]">
       {{.Title}}</h1>
-      {{.Content}}
+      <table class="min-w-full divide-y divide-gray-200 dark:divide-gray-700">
+          <thead>
+            <tr>
+              <th scope="col" class="px-6 bg-[#0C5AA1] py-3  text-xs font-medium text-white uppercase">ГРУППЫ ЖИДКОСТЕЙ</th>
+              <th scope="col" class="bg-[#0C5AA1] px-6 py-3 text-left text-xs font-medium text-white uppercase">СТАНДАРТНЫЙ МАТЕРИАЛ НИТРИЛКАУЧУК (NBR) -обычно черного цвета</th>
+              <th scope="col" class="bg-[#0C5AA1] px-6 py-3 text-left text-xs font-medium text-white  uppercase">МАТЕРИАЛ САЛЬНИКОВ VITOCOM - ФТОРКАУЧУК VITON(FPM)</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-gray-200 dark:divide-gray-700">
+            <tr>
+              <td class=" px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-800 dark:text-gray-800">Минеральные смазочные масла</td>
+              <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-800 dark:text-gray-200">1</td>
+              <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-800 dark:text-gray-200">1</td>
+            </tr>
+
+            <tr>
+              <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-800 dark:text-gray-200">Бензин</td>
+              <td class="bg-blue-100 px-6 py-4 whitespace-nowrap text-sm text-gray-800 dark:text-gray-800">2</td>
+              <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-800 dark:text-gray-200">1</td>
+            </tr>
+
+            <tr>
+              <td class=" px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-800 dark:text-gray-800">Углеводороды: толуол, ксилол</td>
+              <td class="bg-red-100 px-6 py-4 whitespace-nowrap text-sm text-gray-800 dark:text-gray-800">3</td>
+              <td class=" px-6 py-4 whitespace-nowrap text-sm text-gray-800 dark:text-gray-800">1</td>
+            </tr>
+            <tr>
+              <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-800 dark:text-gray-200">Хлорированные углеводороды</td>
+              <td class="bg-red-100 px-6 py-4 whitespace-nowrap text-sm text-gray-800 dark:text-gray-800">3</td>
+              <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-800 dark:text-gray-200">1</td>
+            </tr>
+            <tr>
+              <td class=" px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-800 dark:text-gray-800">Спирты: этиловый, метиловый, изопропиловый</td>
+              <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-800 dark:text-gray-200">1</td>
+              <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-800 dark:text-gray-200">1</td>
+            </tr>
+            <tr>
+              <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-800 dark:text-gray-200">Ацетон</td>
+              <td class="bg-red-100 px-6 py-4 whitespace-nowrap text-sm text-gray-800 dark:text-gray-800">3</td>
+              <td class="bg-red-100 px-6 py-4 whitespace-nowrap text-sm text-gray-800 dark:text-gray-200">3</td>
+            </tr>
+            <tr>
+              <td class=" px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-800 dark:text-gray-800">Вода морская</td>
+              <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-800 dark:text-gray-200">1</td>
+              <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-800 dark:text-gray-200">1</td>
+            </tr>
+            <tr>
+              <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-800 dark:text-gray-200">Асфальт, горячий битум(t до 200 С)</td>
+              <td class="bg-blue-100 px-6 py-4 whitespace-nowrap text-sm text-gray-800 dark:text-gray-800">2</td>
+              <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-800 dark:text-gray-200">1</td>
+            </tr>
+              <tr>
+              <td class=" px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-800 dark:text-gray-800">Гудрон</td>
+              <td class="bg-blue-100 px-6 py-4 whitespace-nowrap text-sm text-gray-800 dark:text-gray-800">2</td>
+              <td class=" px-6 py-4 whitespace-nowrap text-sm text-gray-800 dark:text-gray-800">1</td>
+            </tr>
+              <tr>
+              <td class=" px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-800 dark:text-gray-800">Насыщенный пар t до 200 С под высоким давлением</td>
+              <td class="bg-red-100 px-6 py-4 whitespace-nowrap text-sm text-gray-800 dark:text-gray-800">3</td>
+              <td class=" px-6 py-4 whitespace-nowrap text-sm text-gray-800 dark:text-gray-800">1</td>
+            </tr>     <tr>
+              <td class=" px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-800 dark:text-gray-800">Щелочи: едкий калий, едкий натр, моющие щелочи t до 100 С</td>
+              <td class="bg-red-100 px-6 py-4 whitespace-nowrap text-sm text-gray-800 dark:text-gray-800">3</td>
+              <td class=" bg-blue-100 px-6 py-4 whitespace-nowrap text-sm text-gray-800 dark:text-gray-800">2</td>
+            </tr>
+            <tr>
+                         <td class=" px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-800 dark:text-gray-800">Хлоросульфатна кислота</td>
+                         <td class="bg-red-100 px-6 py-4 whitespace-nowrap text-sm text-gray-800 dark:text-gray-800">3</td>
+                         <td class=" bg-blue-100 px-6 py-4 whitespace-nowrap text-sm text-gray-800 dark:text-gray-800">2</td>
+                       </tr>
+                       <tr>
+                         <td class=" px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-800 dark:text-gray-800">Углеводороды: толуол, ксилол</td>
+                         <td class="bg-red-100 px-6 py-4 whitespace-nowrap text-sm text-gray-800 dark:text-gray-800">3</td>
+                         <td class=" px-6 py-4 whitespace-nowrap text-sm text-gray-800 dark:text-gray-800">1</td>
+                       </tr>
+                 <tr>
+              <td class=" px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-800 dark:text-gray-800">Хромовая кислота</td>
+              <td class="bg-red-100 px-6 py-4 whitespace-nowrap text-sm text-gray-800 dark:text-gray-800">3</td>
+              <td class=" px-6 py-4 whitespace-nowrap text-sm text-gray-800 dark:text-gray-800">1</td>
+            </tr>
+             <tr>
+              <td class=" px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-800 dark:text-gray-800">Уксусная кислота</td>
+              <td class="bg-red-100 px-6 py-4 whitespace-nowrap text-sm text-gray-800 dark:text-gray-800">3</td>
+              <td class=" px-6 py-4 whitespace-nowrap text-sm text-gray-800 dark:text-gray-800">1</td>
+            </tr>
+             <tr>
+              <td class=" px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-800 dark:text-gray-800">Фтористоводородная кислота</td>
+              <td class="bg-red-100 px-6 py-4 whitespace-nowrap text-sm text-gray-800 dark:text-gray-800">3</td>
+              <td class=" px-6 py-4 whitespace-nowrap text-sm text-gray-800 dark:text-gray-800">1</td>
+            </tr>
+             <tr>
+              <td class=" px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-800 dark:text-gray-800">Щавелевая кислота</td>
+              <td class="bg-red-100 px-6 py-4 whitespace-nowrap text-sm text-gray-800 dark:text-gray-800">3</td>
+              <td class=" px-6 py-4 whitespace-nowrap text-sm text-gray-800 dark:text-gray-800">1</td>
+            </tr>
+             <tr>
+              <td class=" px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-800 dark:text-gray-800">Фосфорная кислота</td>
+              <td class="bg-blu-100 px-6 py-4 whitespace-nowrap text-sm text-gray-800 dark:text-gray-800">2</td>
+              <td class=" px-6 py-4 whitespace-nowrap text-sm text-gray-800 dark:text-gray-800">1</td>
+            </tr>
+             <tr>
+              <td class=" px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-800 dark:text-gray-800">Углеводороды: толуол, ксилол</td>
+              <td class="bg-red-100 px-6 py-4 whitespace-nowrap text-sm text-gray-800 dark:text-gray-800">3</td>
+              <td class=" px-6 py-4 whitespace-nowrap text-sm text-gray-800 dark:text-gray-800">1</td>
+            </tr>
+             <tr>
+              <td class=" px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-800 dark:text-gray-800">Азотная кислота</td>
+              <td class="bg-red-100 px-6 py-4 whitespace-nowrap text-sm text-gray-800 dark:text-gray-800">3</td>
+              <td class=" px-6 py-4 whitespace-nowrap text-sm text-gray-800 dark:text-gray-800">1</td>
+            </tr>
+             <tr>
+              <td class=" px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-800 dark:text-gray-800">Хлорноватистая кислота</td>
+              <td class="bg-red-100 px-6 py-4 whitespace-nowrap text-sm text-gray-800 dark:text-gray-800">3</td>
+              <td class=" px-6 py-4 whitespace-nowrap text-sm text-gray-800 dark:text-gray-800">1</td>
+            </tr>
+             <tr>
+              <td class=" px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-800 dark:text-gray-800">Серная кислота</td>
+              <td class="bg-red-100 px-6 py-4 whitespace-nowrap text-sm text-gray-800 dark:text-gray-800">3</td>
+              <td class=" px-6 py-4 whitespace-nowrap text-sm text-gray-800 dark:text-gray-800">1</td>
+            </tr>
+               <tr>
+              <td class=" px-6 py-4 whitespace-nowrap text-sm font-medium bg-[#0C5AA1] py-3  text-xs font-medium text-white dark:text-gray-800">МАКСИМАЛЬНАЯ ПОСТОЯННАЯ РАБОЧАЯ ТЕМПЕРАТУРА</td>
+              <td class=" px-6 py-4 whitespace-nowrap text-sm bg-[#0C5AA1] py-3  text-xs font-medium text-white dark:text-gray-800">121 С</td>
+              <td class=" px-6 py-4 whitespace-nowrap text-sm bg-[#0C5AA1] py-3  text-xs font-medium text-white  dark:text-gray-800">204 С</td>
+            </tr>
+            <tr>
+              <td class=" px-6 py-4 whitespace-nowrap text-sm font-medium bg-[#0C5AA1] py-3  text-xs font-medium text-white dark:text-gray-800">МАКСИМАЛЬНО ДОПУСТИМАЯ СКОРОСТЬ ВРАЩЕНИЯ ВАЛА</td>
+              <td class=" px-6 py-4 whitespace-nowrap text-sm bg-[#0C5AA1] py-3  text-xs font-medium text-white dark:text-gray-800">V max = 12m/c</td>
+              <td class=" px-6 py-4 whitespace-nowrap text-sm bg-[#0C5AA1] py-3  text-xs font-medium text-white  dark:text-gray-800">V max =35 m/c</td>
+            </tr>
+          </tbody>
+        </table>
     </div>
     <div class="col-span-3 col-start-2 row-start-4 h-10"></div>
     <div class="col-span-3 col-start-2 row-start-5"><p class="text-white font-serif font-bold text-center text-3xl h-fit py-5">КАЧЕСТВО БЕЗ РЕКЛАМЫ</p></div>
