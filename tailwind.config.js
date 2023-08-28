@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["https://github.com/vidra/vitocom_site/content/*.md", "https://github.com/vidra/vitocom_site/layouts/**/*.html"],
+  content: ["http://vitokom.ru/content/*.md", "http://vitokom.ru/layouts/**/*.html"],
   theme: {
     extend: {
           gridTemplateColumns: {
