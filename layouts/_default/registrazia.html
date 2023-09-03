@@ -1,5 +1,37 @@
 {{define "main"}}
+<script>
+	 function postToGoogle() {
+   var field1 = $("input[type='radio'][name='qs1']:checked").val();
+   var field2 = $('#feed').val();
 
+   $.ajax({
+     url: "https://docs.google.com/forms/d/e/1FAIpQLSdjOTKRb7YiWi8OGPq6M6CRL0TpuAsUKacKp2XgruMbIp4wzg/formResponse",
+     data: {
+       "entry.924752166": field1,
+       "entry.997497831": field2
+     },
+     type: "POST",
+     dataType: "xml",
+     statusCode: {
+       0: function() {
+         //Success message
+       },
+       200: function() {
+         //Success Message
+       }
+     }
+   });
+ }
+
+$(document).ready(function() {
+   $('#form').submit(function() {
+     postToGoogle();
+     return false;
+   });
+
+});
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <body class="bg-gradient-to-b from-white to-[#9eb9ce] h-full  ">
 
 
@@ -66,7 +98,26 @@
 
     <h1 class="py-6 text-3xl font-Montserrat font-bold text-[#003567]">
       {{.Title}}</h1>
-      {{.Content}}
+    <strong>Test Google Form</strong>
+<form id="form" target="_self" onsubmit="" action="javascript: postToGoogle()">
+  <fieldset>
+    <label>Question 1</label>
+    <input id="qs1_op_1" type="radio" value="Yes" name="qs1" />
+    <input id="qs1_op_2" type="radio" value="No" name="qs1" />
+  </fieldset>
+  <fieldset>
+    <label>Text</label>
+    <textarea id="feed" name="feed"></textarea>
+  </fieldset>
+  <div style="width: 100%; display: block; float: right;">
+    <button id="send" type="submit">
+      Send
+    </button>
+  </div>
+</form>
+<br /><br />
+The <a href="https://docs.google.com/spreadsheets/d/1bVeLfK2gm6emaGRKHnMllpeb_P4HwwZoIfZB5MCcyZg/pubhtml">Result</a> takes few minutes to be shown, but it is sent to the google sheet instantaneously.
+<br /><br />
     </div>
     <div class="col-span-3 col-start-2 row-start-4 h-10"></div>
     <div class="col-span-3 col-start-2 row-start-5"><p class="text-white font-serif font-bold text-center text-3xl h-fit py-5">КАЧЕСТВО БЕЗ РЕКЛАМЫ</p></div>
