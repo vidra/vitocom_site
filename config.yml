@@ -1,4 +1,8 @@
 baseURL: "https://vidra.github.io/vitocom_site/"
 languageCode: en-us
 title: vitocom 
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
 
