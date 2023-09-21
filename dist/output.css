@@ -62,6 +62,9 @@ body {
   /* 1 */
   line-height: inherit;
   /* 2 */
+  background:url("/src/img_foot.png") no-repeat bottom left, linear-gradient(to bottom, white, #0459a2) ;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
 }
 
 /*
