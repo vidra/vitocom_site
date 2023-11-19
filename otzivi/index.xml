@@ -2,9 +2,9 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Отзывы, новинки, рекомендации on vitocom</title>
-    <link>/otzivi/</link>
+    <link>https://vidra.github.io/vitocom_site/otzivi/</link>
     <description>Recent content in Отзывы, новинки, рекомендации on vitocom</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="/otzivi/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="https://vidra.github.io/vitocom_site/otzivi/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
